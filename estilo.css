@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #F2E3D5;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: #F23041;
+}
+
+.navSubtitulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+}
+
+[class$="-link"] {
+    width: 180px;
+    height: 40px;
+    border-radius: 40px 40px 0 0;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.acamp-card {
+    height: 60vh;
+    background-color: #F2B807;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.acamp-link {
+    background-color: #F2B807;
+    top: -40px;
+    right: 10px;
+}
+
+.imgAcamp {
+    padding-left: 40px;
+    margin-top: 40px;
+}
+
+.tituloAcamp {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    color: #F2E3D5;
+    font-size: 25px;
+}
+
+.data {
+    align-self: baseline;
+}
+
+main a {
+    text-decoration: none;
+}
+
+.check-card {
+    height: 25px;
+    background-color: #F23041;
+    padding-left: 1vw;
+}
+
+.check-link {
+    background-color: #F23041;
+    bottom: 134px;
+}
+
+.quarto-card {
+    height: 25px;
+    background-color: #F2E3D5;
+    text-align: end;
+    padding-right: 15vw;
+}
+
+.quarto-link {
+    background-color: #F2E3D5;
+    bottom: 109px;
+    right: 15px;
+}
+
+.culto-card {
+    height: 25px;
+    background-color: #F2B807;
+    padding-left: 27vw;
+}
+
+.culto-link {
+    background-color: #F2B807;
+    bottom: 84px;
+    left: 40px;
+}
+
+.program-card {
+    height: 60px;
+    background-color: #05594A;
+    text-align: center;
+}
+
+.program-link {
+    background-color: #05594A;
+    bottom: 60px;
+    right: 5px;
+}
