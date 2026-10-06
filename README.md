@@ -8,4 +8,4 @@ Projeto desenvolvido com o objetivo de criar um **Manual de Acampamento** digita
 
 ## 🚀 Sobre o Projeto
 
-O propósito deste sistema é centralizar todas as informações essenciais para a realização dos acampamentos da igreja, facilitando o acesso de líderes, participantes e equipe de organização.
+O propósito deste sistema é centralizar todas as informações essenciais para a realização do acampamento da igreja, facilitando o acesso de líderes, participantes e equipe de organização.
