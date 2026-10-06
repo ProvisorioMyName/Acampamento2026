@@ -1,170 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Jersey+20&family=Nerko+One&family=Poller+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Jersey+20&family=Nerko+One&family=Poller+One&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    background-color: #F2E3D5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #f2e3d5;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    color: #cc1c2b;
-    font-family: Fredoka, 'Courier New', Courier, monospace;
-    text-transform: uppercase;
-    font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  color: #cc1c2b;
+  font-family: Fredoka, "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .navSubtitulo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .menu-cards {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .card {
-    width: 100%;
+  width: 100%;
 }
 
 [class$="-link"] {
-    width: 180px;
-    height: 40px;
-    border-radius: 40px 40px 0 0;
-    padding-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
+  width: 180px;
+  height: 40px;
+  border-radius: 40px 40px 0 0;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
 }
 
 .acamp-card {
-    height: 60vh;
-    background-color: #F2B807;
-    display: flex;
-    flex-direction: column;
+  height: 60vh;
+  background-color: #f2b807;
+  display: flex;
+  flex-direction: column;
 }
 
 .acamp-link {
-    background-color: #F2B807;
-    top: -40px;
-    right: 10px;
+  background-color: #f2b807;
+  top: -40px;
+  right: 10px;
 }
-.acamp-link a{
-    color: #a16409;
+.acamp-link a {
+  color: #a16409;
 }
 
 .imgAcamp {
-    padding-right: 40px;
-    margin-top: 40px;
-    display: flex;
-    justify-content: end;
+  padding-right: 40px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: end;
 }
-.imgAcamp img{
-    transform: rotate(7deg)
+.imgAcamp img {
+  transform: rotate(7deg);
 }
 
 .tituloAcamp {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    flex-direction: column;
-    color: #F2E3D5;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  color: #f2e3d5;
 }
-.tituloAcamp span{
-    font-family: fredoka;
-    font-size: 1.4em;
-    text-transform: lowercase;
+.tituloAcamp span {
+  font-family: fredoka;
+  font-size: 1.4em;
+  text-transform: lowercase;
 }
-.tituloAcamp h1{
-    font-family:  Poller One;
-    font-size: 2em;
-    text-transform: uppercase;
+.tituloAcamp h1 {
+  font-family: Poller One;
+  font-size: 2em;
+  text-transform: uppercase;
 }
 
 .data {
-    align-self: baseline;
+  align-self: baseline;
 }
 
 main a {
-    text-decoration: none;
-    font-family: Poller One;
-    text-transform: uppercase;
-    font-size: 1em;
+  text-decoration: none;
+  font-family: Poller One;
+  text-transform: uppercase;
+  font-size: 1em;
 }
 
 .check-card {
-    height: 25px;
-    background-color: #F23041;
-    padding-left: 1vw;
+  height: 25px;
+  background-color: #f23041;
+  padding-left: 1vw;
 }
 
 .check-link {
-    background-color: #F23041;
-    bottom: 134px;
+  background-color: #f23041;
+  bottom: 134px;
 }
-.check-link a{
-    color: #700d16c4;
+.check-link a {
+  color: #700d16c4;
 }
 
 .quarto-card {
-    height: 25px;
-    background-color: #F2E3D5;
-    text-align: end;
-    padding-right: 15vw;
+  height: 25px;
+  background-color: #f2e3d5;
+  text-align: end;
+  padding-right: 15vw;
 }
 
 .quarto-link {
-    background-color: #F2E3D5;
-    bottom: 109px;
-    right: 15px;
+  background-color: #f2e3d5;
+  bottom: 109px;
+  right: 15px;
 }
-.quarto-link a{
-    color: #a58a6e;
+.quarto-link a {
+  color: #a58a6e;
 }
 
 .culto-card {
-    height: 25px;
-    background-color: #F2B807;
-    padding-left: 27vw;
+  height: 25px;
+  background-color: #f2b807;
+  padding-left: 27vw;
 }
 
 .culto-link {
-    background-color: #F2B807;
-    bottom: 84px;
-    left: 40px;
+  background-color: #f2b807;
+  bottom: 84px;
+  left: 40px;
 }
-.culto-link a{
-    color: #a16409;
+.culto-link a {
+  color: #a16409;
 }
 
 .program-card {
-    height: 60px;
-    background-color: #05594A;
-    text-align: center;
+  height: 60px;
+  background-color: #05594a;
+  text-align: center;
 }
 
 .program-link {
-    background-color: #05594A;
-    bottom: 60px;
-    right: 5px;
+  background-color: #05594a;
+  bottom: 60px;
+  right: 5px;
 }
 
-.program-link a{
-    color: #033027;
+.program-link a {
+  color: #033027;
+}
+
+/* Abaixo fica as animações de cada pasta, começando pela checklist */
+#checklist.subir {
+  transform: translateY(-100px);
+}
+
+.check-card.aumentar {
+  height: 70vh;
+}
+
+/* Quartos */
+.quarto-card.su {
+}
+.quarto-link {
 }
