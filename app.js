@@ -2,7 +2,6 @@
 const checklist = document.querySelector("#checklist");
 const checkCard = document.querySelector(".check-card");
 const checkLink = document.querySelector(".check-link");
-const rebarba = document.querySelector('[class$="-link"]');
 
 checklist.addEventListener("click", () => {
   checklist.classList.toggle("subir");

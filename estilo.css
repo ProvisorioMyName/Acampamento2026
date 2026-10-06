@@ -42,7 +42,14 @@ nav {
   width: 100%;
 }
 
-[class$="-link"] {
+.acamp-card {
+  height: 60vh;
+  background-color: #f2b807;
+  display: flex;
+  flex-direction: column;
+}
+
+.acamp-link a{
   width: 180px;
   height: 40px;
   border-radius: 40px 40px 0 0;
@@ -51,23 +58,12 @@ nav {
   align-items: center;
   justify-content: center;
   position: absolute;
-}
-
-.acamp-card {
-  height: 60vh;
   background-color: #f2b807;
-  display: flex;
-  flex-direction: column;
-}
-
-.acamp-link {
-  background-color: #f2b807;
+  color: #a16409;
   top: -40px;
   right: 10px;
 }
-.acamp-link a {
-  color: #a16409;
-}
+
 
 .imgAcamp {
   padding-right: 40px;
@@ -109,79 +105,108 @@ main a {
 }
 
 .check-card {
-  height: 25px;
+  height: 30px;
   background-color: #f23041;
   padding-left: 1vw;
 }
 
-.check-link {
+.check-link a{
+  width: 180px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px 40px 0 0;
+  padding-top: 10px;
+  position: relative;
   background-color: #f23041;
-  bottom: 134px;
-}
-.check-link a {
   color: #700d16c4;
+  bottom: 5vh;
 }
 
 .quarto-card {
-  height: 25px;
+  height: 30px;
   background-color: #f2e3d5;
-  text-align: end;
-  padding-right: 15vw;
+  display: flex;
+  justify-content: end;
 }
 
-.quarto-link {
+.quarto-link a{
+  width: 180px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px 40px 0 0;
+  padding-top: 10px;
+  position: relative;
   background-color: #f2e3d5;
-  bottom: 109px;
-  right: 15px;
-}
-.quarto-link a {
   color: #a58a6e;
+  bottom: 5vh;
+  right: 3vw;
 }
 
 .culto-card {
-  height: 25px;
+  height: 30px;
   background-color: #f2b807;
-  padding-left: 27vw;
 }
 
-.culto-link {
+.culto-link a{
+  width: 180px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px 40px 0 0;
+  padding-top: 10px;
+  position: relative;
   background-color: #f2b807;
-  bottom: 84px;
-  left: 40px;
-}
-.culto-link a {
   color: #a16409;
+  bottom: 5vh;
+  left: 7vw;
 }
 
 .program-card {
   height: 60px;
   background-color: #05594a;
-  text-align: center;
-}
-
-.program-link {
-  background-color: #05594a;
-  bottom: 60px;
-  right: 5px;
+  display: flex;
+  justify-content: end;
 }
 
 .program-link a {
+  width: 180px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px 40px 0 0;
+  padding-top: 10px;
+  background-color: #05594a;
+  position: relative;
   color: #033027;
+  bottom: 5vh;
+  right: 5vw;
 }
 
-/* Abaixo fica as animações de cada pasta, começando pela checklist */
-#checklist.subir {
+/* Abaixo fica as animações de cada pasta */
+
+/* Checklist */
+
+/* Ent como eu tirei o estilo da div que guarda o link, o comando abaixo se tornou inutil
+espero que vc n se importe */
+
+/* #checklist.subir {
   transform: translateY(-100px);
-}
+} */
 
 .check-card.aumentar {
-  height: 70vh;
+  height: 30vh;
 }
 
 /* Quartos */
-#quartos.subir {
+/* #quartos.subir {
   transform: translateY(-100px);
-}
+} */
 
 .quarto-card.aumentar {
   position: absolute;
