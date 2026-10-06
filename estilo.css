@@ -179,7 +179,16 @@ main a {
 }
 
 /* Quartos */
-.quarto-card.su {
+#quartos.subir {
+  transform: translateY(-100px);
 }
-.quarto-link {
+
+.quarto-card.aumentar {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+  margin-bottom: 60px;
+  height: 40vh;
 }

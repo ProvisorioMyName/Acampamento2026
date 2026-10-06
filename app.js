@@ -9,3 +9,12 @@ checklist.addEventListener("click", () => {
   checkCard.classList.toggle("aumentar");
   checkLink.classList.toggle("subir");
 });
+
+//Parte do quartos
+const quartoCard = document.querySelector(".quarto-card");
+const quartoLink = document.querySelector(".quarto-link");
+
+quartoCard.addEventListener("click", () => {
+  quartoCard.classList.toggle("aumentar");
+  quartoLink.classList.toggle("subir");
+});
