@@ -193,6 +193,7 @@ main a {
 
 /* Ent como eu tirei o estilo da div que guarda o link, o comando abaixo se tornou inutil
 espero que vc n se importe */
+/*Elias: Relaxa, não me importo. O que importa é que o projeto saia, amigo*/
 
 /* #checklist.subir {
   transform: translateY(-100px);
@@ -211,7 +212,21 @@ espero que vc n se importe */
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 9999;
-  margin-bottom: 60px;
+  height: 40vh;
+}
+
+/* culto  */
+.culto-card.aumentar {
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 40vh;
+}
+
+/* Programação */
+.program-card.aumentar {
+  right: 0;
+  left: 0;
+  bottom: 0;
   height: 40vh;
 }
