@@ -133,7 +133,7 @@ main a {
 
 .quarto-link a{
   width: 180px;
-  height: 40px;
+  height: 41px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,7 +175,7 @@ main a {
 
 .program-link a {
   width: 180px;
-  height: 40px;
+  height: 41px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,24 +189,13 @@ main a {
 }
 
 /* Abaixo fica as animações de cada pasta */
-
 /* Checklist */
-
-/* Ent como eu tirei o estilo da div que guarda o link, o comando abaixo se tornou inutil
-espero que vc n se importe */
-
-/* #checklist.subir {
-  transform: translateY(-100px);
-} */
 
 .check-card.aumentar {
   height: 30vh;
 }
 
 /* Quartos */
-/* #quartos.subir {
-  transform: translateY(-100px);
-} */
 
 .quarto-card.aumentar {
   position: absolute;
@@ -217,3 +206,4 @@ espero que vc n se importe */
   margin-bottom: 60px;
   height: 40vh;
 }
+
