@@ -1,19 +1,27 @@
 //Fazendo a parte da animação do checklist
-const checklist = document.querySelector("#checklist");
 const checkCard = document.querySelector(".check-card");
-const checkLink = document.querySelector(".check-link");
 
-checklist.addEventListener("click", () => {
-  checklist.classList.toggle("subir");
+checkCard.addEventListener("click", () => {
   checkCard.classList.toggle("aumentar");
-  checkLink.classList.toggle("subir");
 });
 
 //Parte do quartos
 const quartoCard = document.querySelector(".quarto-card");
-const quartoLink = document.querySelector(".quarto-link");
 
 quartoCard.addEventListener("click", () => {
   quartoCard.classList.toggle("aumentar");
-  quartoLink.classList.toggle("subir");
+});
+
+//Parte dos cultos
+const cultos = document.querySelector(".culto-card");
+
+cultos.addEventListener("click", () => {
+  cultos.classList.toggle("aumentar");
+});
+
+//Parte da programação
+const programacao = document.querySelector(".program-card");
+
+programacao.addEventListener("click", () => {
+  programacao.classList.toggle("aumentar");
 });
