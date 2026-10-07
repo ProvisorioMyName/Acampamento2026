@@ -49,7 +49,7 @@ nav {
   flex-direction: column;
 }
 
-.acamp-link a{
+.acamp-link a {
   width: 180px;
   height: 40px;
   border-radius: 40px 40px 0 0;
@@ -63,7 +63,6 @@ nav {
   top: -40px;
   right: 10px;
 }
-
 
 .imgAcamp {
   padding-right: 40px;
@@ -110,7 +109,7 @@ main a {
   padding-left: 1vw;
 }
 
-.check-link a{
+.check-link a {
   width: 180px;
   height: 41px;
   display: flex;
@@ -131,7 +130,7 @@ main a {
   justify-content: end;
 }
 
-.quarto-link a{
+.quarto-link a {
   width: 180px;
   height: 40px;
   display: flex;
@@ -151,7 +150,7 @@ main a {
   background-color: #f2b807;
 }
 
-.culto-link a{
+.culto-link a {
   width: 180px;
   height: 41px;
   display: flex;
@@ -209,7 +208,6 @@ espero que vc n se importe */
 } */
 
 .quarto-card.aumentar {
-  position: absolute;
   right: 0;
   left: 0;
   bottom: 0;
