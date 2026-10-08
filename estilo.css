@@ -187,3 +187,8 @@ main a {
   height: 30vh;
   transition: 0.5s ease;
 }
+
+.diminuir {
+  height: 5vh;
+  transition: 0.5s ease;
+}
