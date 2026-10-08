@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Jersey+20&family=Nerko+One&family=Poller+One&display=swap");
 
+:root{
+  --vermelho: #f23041;
+  --amarelo: #f2b807;
+  --verde: #05594a;
+  --branco: #f2e3d5;
+}
+
+
 * {
   padding: 0;
   margin: 0;
@@ -45,15 +53,8 @@ nav {
   flex-direction: column;
 }
 
-.acamp-link a {
-  width: 180px;
-  height: 41px;
-  border-radius: 40px 40px 0 0;
-  padding-top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f2b807;
+.acamp-link button {
+  --corBnt:var(--amarelo);
   color: #a16409;
   margin-top: -40px;
   margin-left: auto;
@@ -91,13 +92,6 @@ nav {
   align-self: baseline;
 }
 
-main a {
-  text-decoration: none;
-  font-family: Poller One;
-  text-transform: uppercase;
-  font-size: 1em;
-}
-
 .check-card {
   width: 100%;
   height: 30px;
@@ -105,15 +99,22 @@ main a {
   z-index: 11;
 }
 
-.check-link a {
+.bnt{
   width: 180px;
-  height: 41px;
+  height: 46px;
+  border-radius: 40px 40px 0 0;
+  padding-top: 10px;
+  background-color: var(--corBnt);
+  border: none;
+  font-family: Poller One;
+  text-transform: uppercase;
+  font-size: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 40px 40px 0 0;
-  padding-top: 10px;
-  background-color: #f23041;
+}
+.check-link button {
+  --corBnt: var(--vermelho);
   color: #700d16c4;
   margin-top: -40px;
   margin-left: 5px;
@@ -128,17 +129,10 @@ main a {
   z-index: 11;
 }
 
-.quarto-link a {
-  width: 180px;
-  height: 41px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 40px 40px 0 0;
-  padding-top: 10px;
-  background-color: #f2e3d5;
+.quarto-link button{
+  --corBnt: var(--branco);
   color: #a58a6e;
-  margin-top: -40px;
+  margin-top: -45px;
   margin-right: 5px;
 }
 
@@ -149,17 +143,10 @@ main a {
   z-index: 11;
 }
 
-.culto-link a {
-  width: 180px;
-  height: 41px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 40px 40px 0 0;
-  padding-top: 10px;
-  background-color: #f2b807;
+.culto-link button {
+  --corBnt:var(--amarelo);
   color: #a16409;
-  margin-top: -40px;
+  margin-top: -45px;
   margin-left: 20px;
 }
 
@@ -172,31 +159,27 @@ main a {
   z-index: 11;
 }
 
-.program-link a {
-  width: 180px;
-  height: 41px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 40px 40px 0 0;
-  padding-top: 10px;
-  background-color: #05594a;
+.program-link button {
+  --corBnt:var(--verde);
   color: #033027;
   margin-top: -40px;
   margin-right: 15px;
 }
 
 /* Abaixo fica as animações de cada pasta */
- .acamp-card, .check-card, .quarto-card, .culto-card, .program-card {
+.acamp-card,
+.check-card,
+.quarto-card,
+.culto-card,
+.program-card {
   transition: height 0.5s ease; /* O navegador agora suaviza QUALQUER mudança de altura */
 }
 
 .aumentar {
-  height: 30vh;
-
+  height: 50vh;
 }
 
-.aumentarAcamp{
+.aumentarAcamp {
   height: 55vh;
 }
 
