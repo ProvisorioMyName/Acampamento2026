@@ -1,56 +1,31 @@
-//Fazendo a parte da animação do checklist
-const checkCard = document.querySelector(".check-card");
+//Pegamos de uma vez todos os elementos, para que não tenhamos que armazenar em várias variáveis
+const cards = document.querySelectorAll(
+  ".check-card, .quarto-card, .culto-card, .program-card",
+);
 const acampCard = document.querySelector(".acamp-card");
 
-checkCard.addEventListener("click", () => {
-  checkCard.classList.toggle("aumentar");
-  acampCard.classList.toggle("diminuir");
-  if (!checkCard.classList.contains("aumentar")) {
-    acampCard.classList.toggle("aumentarAcamp");
-    checkCard.classList.add("diminuir");
-  } else {
-    checkCard.classList.remove("diminuir");
-  }
-});
+cards.forEach((card) => {
+  //Pelo parametro "card" (o item da vez que está sendo rodado) verifiacmos no clique dele se ele tem a classe "aumentar"
+  card.addEventListener("click", () => {
+    const estavaAumentado = card.classList.contains("aumentar");
 
-//Parte do quartos
-const quartoCard = document.querySelector(".quarto-card");
+    //Fazemos outro forEach para resetar todos os elementos com o remove
+    cards.forEach((c) => {
+      c.classList.remove("aumentar", "diminuir");
+    });
+    acampCard.classList.remove("diminuir", "aumentarAcamp");
 
-quartoCard.addEventListener("click", () => {
-  quartoCard.classList.toggle("aumentar");
-  acampCard.classList.toggle("diminuir");
-  if (!quartoCard.classList.contains("aumentar")) {
-    acampCard.classList.toggle("aumentarAcamp");
-    quartoCard.classList.add("diminuir");
-  } else {
-    quartoCard.classList.remove("diminuir");
-  }
-});
+    if (!estavaAumentado) {
+      card.classList.add("aumentar");
 
-//Parte dos cultos
-const cultos = document.querySelector(".culto-card");
+      //Verifica se o elemento da vez (o elemento que está com o aumentar) é diferente dos demais elementos da lista
+      cards.forEach((c) => {
+        if (c !== card) c.classList.add("diminuir");
+      });
 
-cultos.addEventListener("click", () => {
-  cultos.classList.toggle("aumentar");
-  acampCard.classList.toggle("diminuir");
-  if (!cultos.classList.contains("aumentar")) {
-    acampCard.classList.toggle("aumentarAcamp");
-    cultos.classList.add("diminuir");
-  } else {
-    cultos.classList.remove("diminuir");
-  }
-});
-
-//Parte da programação
-const programacao = document.querySelector(".program-card");
-
-programacao.addEventListener("click", () => {
-  programacao.classList.toggle("aumentar");
-  acampCard.classList.toggle("diminuir");
-  if (!programacao.classList.contains("aumentar")) {
-    acampCard.classList.toggle("aumentarAcamp");
-    programacao.classList.add("diminuir");
-  } else {
-    programacao.classList.remove("diminuir");
-  }
+      acampCard.classList.add("diminuir");
+    } else {
+      acampCard.classList.add("aumentarAcamp");
+    }
+  });
 });
