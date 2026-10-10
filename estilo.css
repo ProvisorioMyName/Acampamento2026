@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Jersey+20&family=Nerko+One&family=Poller+One&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Climate+Crisis:YEAR@1979&family=Fredoka:wght@300..700&family=Poller+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --vermelho: #f23041;
   --amarelo: #f2b807;
-  --verde: #05594a;
+  --verde: #04473b;
   --branco: #f2e3d5;
 }
 
@@ -49,7 +48,7 @@ button {
 
 .acamp-card {
   width: 100%;
-  height: 55vh; /*aqui eu mudei, deixei 55, antes era 60. */
+  height: 65vh; /*aqui eu mudei, deixei 55, antes era 60. */
   background-color: #f2b807;
   display: flex;
   flex-direction: column;
@@ -80,18 +79,23 @@ button {
   color: #f2e3d5;
 }
 .tituloAcamp span {
-  font-family: fredoka;
-  font-size: 1.4em;
+  font-family: Climate Crisis;
+  font-weight: 600;
+  letter-spacing: 4px;
+  font-size: 40px;
   text-transform: lowercase;
 }
 .tituloAcamp h1 {
-  font-family: Poller One;
-  font-size: 2em;
+  font-family: Bungee;
+  font-size: 50px;
   text-transform: uppercase;
 }
 
 .data {
   align-self: baseline;
+  font-size: 24px;
+  font-family: Fredoka;
+  text-transform: uppercase;
 }
 
 .check-card {
@@ -155,7 +159,7 @@ button {
 .program-card {
   width: 100%;
   height: 60px;
-  background-color: #05594a;
+  background-color: var(--verde);
   display: flex;
   justify-content: end;
   z-index: 11;
@@ -178,7 +182,7 @@ button {
 }
 
 .aumentar {
-  height: 50vh;
+  height: 60vh;
 }
 
 .aumentarAcamp {
@@ -187,4 +191,76 @@ button {
 
 .diminuir {
   height: 5vh;
+}
+
+/* Conteudo da ABA de checkList */
+.check-conteudo{
+  max-height: 450px;
+  overflow-y: auto;
+  padding: 30px 15px 30px 15px;
+}
+.check-info{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.box{
+  border-radius: 20px;
+  height: 170px;
+  overflow: hidden;
+  padding: 15px;
+  gap: 20px;
+}
+.box ul{
+  list-style: none;
+}
+.primeira-cor{
+  background-color: var(--verde);
+  color: var(--branco);
+}
+.segunda-cor{
+  background-color: var(--amarelo);
+  color: var(--verde);
+  font-weight: 500;
+}
+.terceira-cor{
+  background-color: var(--branco);
+
+}
+.cor-icon-1{
+  color: var(--verde);
+}
+.cor-icon-2{
+  color: var(--amarelo);
+}
+.cor-icon-3{
+  color: var(--branco);
+}
+.cor-icon-4{
+  color: var(--vermelho);
+}
+
+.imgs-linha{
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.imgs-linha > i{
+  font-size: 40px;
+}
+.texto-linha{
+  font-family: Fredoka;
+}
+
+/* classe para desativar ou ativar os bagui */
+.ativar{
+  display: block;
+}
+.desativado{
+  display: none;
 }

@@ -1,3 +1,4 @@
+
 //Pegamos de uma vez todos os elementos, para que não tenhamos que armazenar em várias variáveis
 const cards = document.querySelectorAll(
   ".check-card, .quarto-card, .culto-card, .program-card",
