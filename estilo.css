@@ -69,6 +69,7 @@ button {
 }
 .imgAcamp img {
   transform: rotate(7deg);
+  zoom: 120%;
 }
 
 .tituloAcamp {
@@ -126,7 +127,7 @@ button {
   margin-left: 5px;
 }
 
-.quarto-card {
+.program-card {
   width: 100%;
   height: 30px;
   background-color: #f2e3d5;
@@ -135,7 +136,7 @@ button {
   z-index: 11;
 }
 
-.quarto-link button {
+.program-link button {
   --corBnt: var(--branco);
   color: #a58a6e;
   margin-top: -45px;
@@ -156,7 +157,7 @@ button {
   margin-left: 20px;
 }
 
-.program-card {
+.quarto-card {
   width: 100%;
   height: 60px;
   background-color: var(--verde);
@@ -165,7 +166,7 @@ button {
   z-index: 11;
 }
 
-.program-link button {
+.quarto-link button {
   --corBnt: var(--verde);
   color: #033027;
   margin-top: -40px;
@@ -191,6 +192,10 @@ button {
 
 .diminuir {
   height: 5vh;
+}
+
+.desativado{
+  display: none;
 }
 
 /* Conteudo da ABA de checkList */
