@@ -48,7 +48,7 @@ button {
 
 .acamp-card {
   width: 100%;
-  height: 65vh; /*aqui eu mudei, deixei 55, antes era 60. */
+  height: 65vh; 
   background-color: #f2b807;
   display: flex;
   flex-direction: column;
@@ -69,7 +69,6 @@ button {
 }
 .imgAcamp img {
   transform: rotate(7deg);
-  zoom: 120%;
 }
 
 .tituloAcamp {
@@ -83,18 +82,18 @@ button {
   font-family: Climate Crisis;
   font-weight: 600;
   letter-spacing: 4px;
-  font-size: 35px;
+  font-size: 30px;
   text-transform: lowercase;
 }
 .tituloAcamp h1 {
   font-family: Bungee;
-  font-size: 45px;
+  font-size: 40px;
   text-transform: uppercase;
 }
 
 .mesAno {
   align-self: baseline;
-  font-size: 18px;
+  font-size: 14px;
   font-family: Fredoka;
   text-transform: uppercase;
 }
@@ -184,7 +183,7 @@ button {
 .quarto-card,
 .culto-card,
 .program-card {
-  transition: height 0.5s ease; /* O navegador agora suaviza QUALQUER mudança de altura */
+  transition: height 0.5s ease; 
 }
 
 .aumentar {
@@ -218,10 +217,11 @@ button {
 
 .box{
   border-radius: 20px;
-  height: 170px;
+  height: 180px;
   overflow: hidden;
-  padding: 15px;
+  padding: 10px 10px 0px 10px;
   gap: 20px;
+  font-size: 14px;
 }
 .box ul{
   list-style: none;
@@ -259,16 +259,31 @@ button {
   align-items: center;
   justify-content: space-between;
   padding: 0px 10px;
-}
-
-.imgs-linha > i{
-  font-size: 40px;
+  font-size: 30px;
 }
 .texto-linha{
   font-family: Fredoka;
 }
 
-/* conteudo da programação */
+.dupla-coluna{
+  width: 100%;
+  min-height: 80px;
+  background-color: #04473b;
+  grid-column: 1 / 3;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  font-family: Fredoka;
+  color: var(--branco);
+  text-align: center;
+}
+.icon-aviso{
+  font-size: 30px;
+}
 
 .program-conteudo{
   width: 100%;
