@@ -175,7 +175,7 @@ button {
 }
 
 .quarto-conteudo {
-  display: block;
+  display: none;
   align-self: center;
 }
 
@@ -193,6 +193,18 @@ button {
 .culto-card,
 .program-card {
   transition: height 0.5s ease;
+}
+
+.check-card.aumentar .check-conteudo:not(.desativado),
+.program-card.aumentar .program-conteudo:not(.desativado),
+.culto-card.aumentar .culto-conteudo:not(.desativado),
+.quarto-card.aumentar .quarto-conteudo:not(.desativado) {
+  display: block;
+}
+
+/* Mantém a programação organizada quando aberta */
+.program-card.aumentar .program-conteudo:not(.desativado) {
+  display: flex;
 }
 
 .aumentar {
@@ -414,7 +426,7 @@ ul li::marker {
 }
 
 .desativado {
-  display: none;
+  display: none !important;
 }
 
 div.quarto-conteudo section {

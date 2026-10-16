@@ -3,6 +3,7 @@ const cards = document.querySelectorAll(
   ".check-card, .quarto-card, .culto-card, .program-card",
 );
 const acampCard = document.querySelector(".acamp-card");
+const quartoConteudo = document.querySelector(".quarto-conteudo");
 
 const conteudoCard = document.querySelectorAll(
   ".check-conteudo, .program-conteudo, .culto-conteudo, .quarto-conteudo",
