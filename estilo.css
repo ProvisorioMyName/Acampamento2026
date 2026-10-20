@@ -158,6 +158,22 @@ button {
   flex-direction: column;
 }
 
+.culto-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.cultos-dias {
+  display: flex;
+  margin-top: 10px;
+  width: 90vw;
+  align-items: center;
+  background-color: var(--branco);
+  border-radius: 10px;
+  padding: 10px;
+}
+
 .culto-link button {
   --corBnt: var(--amarelo);
   color: #a16409;
