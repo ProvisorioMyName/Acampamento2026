@@ -4,8 +4,8 @@
   --amarelo: #f2b807;
   --verde: #04473b;
   --branco: #f2e3d5;
-  --cardVerde: #3d6b4f;
-  --cardVermelho: #c95d4e;
+  --cardVerde: #105735;
+  --cardVermelho: #692f28;
 }
 
 * {
@@ -30,7 +30,7 @@ nav {
   color: #cc1c2b;
   font-family: Fredoka, "Courier New", Courier, monospace;
   text-transform: uppercase;
-  font-weight: 600;  
+  font-weight: 600;
 }
 
 .navSubtitulo {
@@ -50,8 +50,8 @@ button {
 
 .acamp-card {
   width: 100%;
-  height: 65vh;
-  background-color: #f2b807;
+  height: 55vh;
+  background-color: var(--amarelo);
   display: flex;
   flex-direction: column;
 }
@@ -187,8 +187,8 @@ button {
 
 .quarto-card {
   width: 100%;
-  height: 60px;
-  background-color: var(--verde);
+  height: 30px;
+  background-color: var(--vermelho);
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -208,10 +208,26 @@ button {
 }
 
 .quarto-link button {
+  --corBnt: var(--vermelho);
+  color: #700d16c4;
+  margin-top: -40px;
+  margin-right: 15px;
+}
+
+.aviso-card {
+  width: 100%;
+  height: 50px;
+  background-color: var(--verde);
+  display: flex;
+  flex-direction: column;
+  z-index: 11;
+}
+
+.aviso-link button {
   --corBnt: var(--verde);
   color: #033027;
   margin-top: -40px;
-  margin-right: 15px;
+  margin-left: 30px;
 }
 
 /* Abaixo fica as animações de cada pasta */
@@ -219,7 +235,8 @@ button {
 .check-card,
 .quarto-card,
 .culto-card,
-.program-card {
+.program-card, 
+.aviso-card {
   transition: height 0.5s ease;
 }
 
@@ -228,7 +245,8 @@ button {
 .check-card.aumentar .check-conteudo:not(.desativado),
 .program-card.aumentar .program-conteudo:not(.desativado),
 .culto-card.aumentar .culto-conteudo:not(.desativado),
-.quarto-card.aumentar .quarto-conteudo:not(.desativado) {
+.quarto-card.aumentar .quarto-conteudo:not(.desativado),
+.aviso-card.aumentar .aviso-conteudo:not(.desativado) {
   /*Aplica ao quarto-conteudo por ele ser o seletor final (o not faz somente uma validação)*/
   display: block;
 }
@@ -430,7 +448,7 @@ button {
   font-size: 14px;
   margin: 2px 0px;
 }
-ul li::marker {
+.linha-topicos ul li::marker {
   color: var(--amarelo);
 }
 .linha-atividade {
@@ -445,9 +463,6 @@ ul li::marker {
 }
 
 /* Quartos */
-.desativado {
-  display: none !important;
-}
 
 div.quarto-conteudo section {
   display: block;
@@ -489,11 +504,59 @@ div.quarto-conteudo section {
   font-size: 25px;
 }
 
+.links {
+  text-decoration: none;
+  color: white;
+}
+/* Conteudo de avisos*/
 
+.aviso-conteudo {
+  padding: 20px;
+}
 
-/* APAGAR TUDO DAQUI PARA BAIXO NO DIA DO ACAMPAMENTO 
-Tirar o class das section de quartos, a div de aviso no final e mudar*/
-/* 
-.tirar{
+.aviso-quadro{
+  width: 100%;
+  height: 100%;
+  max-height: 460px;
+  background-color: var(--branco);
+  border-radius: 20px;
+  font-family: Fredoka;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  gap: 25px;
+  scrollbar-width: none;
+  padding: 10px;
+}
+
+.aviso-titulo{
+  font-weight: 900;
+  color: var(--verde);
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.aviso-linha{
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgba(187, 186, 186, 0.801);
+  padding-bottom: 10px;
+}
+
+.aviso-icon{
+  width: 50px;
+  height: 100px;
+  display: flex;
+  margin-left: 15px;
+}
+
+.aviso-texto{
+  margin-left: 10px;
+  list-style-position: inside;
+}
+
+.desativado {
   display: none !important;
-} */
+}

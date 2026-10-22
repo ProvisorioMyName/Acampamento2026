@@ -1,12 +1,12 @@
 //Pegamos de uma vez todos os elementos, para que não tenhamos que armazenar em várias variáveis
 const cards = document.querySelectorAll(
-  ".check-card, .quarto-card, .culto-card, .program-card",
+  ".check-card, .quarto-card, .culto-card, .program-card, .aviso-card",
 );
 const acampCard = document.querySelector(".acamp-card");
 const quartoConteudo = document.querySelector(".quarto-conteudo");
 
 const conteudoCard = document.querySelectorAll(
-  ".check-conteudo, .program-conteudo, .culto-conteudo, .quarto-conteudo",
+  ".check-conteudo, .program-conteudo, .culto-conteudo, .quarto-conteudo, .aviso-conteudo",
 );
 
 cards.forEach((card) => {
@@ -30,7 +30,7 @@ cards.forEach((card) => {
 
       //Verifica o conteudo dentros dos cards
       const conteudoEscolhido = card.querySelector(
-        ".check-conteudo, .program-conteudo, .culto-conteudo, .quarto-conteudo",
+        ".check-conteudo, .program-conteudo, .culto-conteudo, .quarto-conteudo, .aviso-conteudo",
       );
 
       //se o conteudo foi encontrado ele remove a classe que desativa

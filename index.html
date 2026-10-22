@@ -138,17 +138,25 @@
               <p class="data">sexta - 06/11/2026</p>
             </div>
             <div class="lista">
-              <div class="linha">
-                <div class="icon culto">
-                  <i class="fa-solid fa-people-group"></i>
+              <div class="linha-atividade">
+                <div class="linha-titulo">
+                  <div class="icon culto">
+                    <i class="fa-solid fa-people-group"></i>
+                  </div>
+                  <div class="horario culto">
+                    <p>Encontro</p>
+                  </div>
+                  <div class="program-texto">
+                    <p> Concentração na igreja <span>a partir das 19:30</span>
+                    </p>
+                  </div>
                 </div>
-                <div class="horario culto">
-                  <p>Encontro</p>
-                </div>
-                <div class="program-texto">
-                  <p>
-                    Concentração na igreja <span>a partir das 19:30</span>
-                  </p>
+                <div>
+                  <p style="
+                    color: white;
+                    margin-top: 10px;
+                    font-size: 15px;
+                    ">Endereço: Rua Rosalvo José da Silva 332 </p>
                 </div>
               </div>
               <div class="linha sem-linha">
@@ -162,15 +170,30 @@
                   <p><span>20:30</span></p>
                 </div>
               </div>
-              <div class="linha">
-                <div class="icon outros">
-                  <i class="fa-solid fa-car"></i>
+              <div class="linha-atividade">
+                <div class="linha-titulo">
+                  <div class="icon outros">
+                    <i class="fa-solid fa-car"></i>
+                  </div>
+                  <div class="horario outros">
+                    <p>Entrada de carros</p>
+                  </div>
+                  <div class="program-texto">
+                    <p><span>22:00</span></p>
+                  </div>
                 </div>
-                <div class="horario outros">
-                  <p>Entrada de carros</p>
-                </div>
-                <div class="program-texto">
-                  <p><span>22:00</span></p>
+                <div>
+                  <p style="
+                      display: flex;
+                      font-size: 14px;
+                      gap: 10px;
+                      margin-top: 10px;">
+                    <a href="https://waze.com/ul/h6gy34g2rk" class="links"> Ir com o WAZE<i class="fa-brands fa-waze"
+                        style="font-size: 20px;"></i></a>
+
+                    <a href="https://maps.app.goo.gl/wFKcmRpvPhaxF9b99?g_st=iw" class="links">Ir com o Google Maps<i
+                        class="fa-solid fa-map-location" style="font-size: 20px;"></i></a>
+                  </p>
                 </div>
               </div>
               <div class="linha">
@@ -192,7 +215,7 @@
                   <p>Culto</p>
                 </div>
                 <div class="program-texto">
-                  <p>Vigília na gólgota às<br /><span>00:00</span></p>
+                  <p>Vigília no gólgota às<br /><span>00:00</span></p>
                 </div>
               </div>
             </div>
@@ -269,7 +292,7 @@
                     <li>Campo</li>
                     <li>Quadra de vôlei</li>
                     <li>Quadra de Beach tênis</li>
-                    <li>Pedalinho</li>
+                    <li>Pedalinho - 14:00 ás 16:00</li>
                   </ul>
                 </div>
               </div>
@@ -292,7 +315,7 @@
                   <p>Culto</p>
                 </div>
                 <div class="program-texto">
-                  <p>Culto na gólgota às<br /><span>20:00</span></p>
+                  <p>Culto no gólgota às<br /><span>20:00</span></p>
                 </div>
               </div>
               <div class="linha">
@@ -429,7 +452,7 @@
           <h1 style="
                 background-color: var(--branco);
                 text-align: center;
-                border-radius: 5px;
+                border-radius: 10px;
                 width: 70%;
                 font-size: large;
                 margin-top: 20px;
@@ -441,7 +464,7 @@
           <section class="cultos-dias">
             <i class="fa-solid fa-moon" style="
                   background-color: var(--verde);
-                  padding: 20px;
+                  padding: 15px;
                   border-radius: 10px;
                   margin-right: 10px;
                   font-size: 26px;
@@ -461,7 +484,6 @@
                   margin-right: 10px;
                   font-size: 26px;
                   color: white;
-
                 "></i>
             <div class="culto-info">
               <h2 style="font-size: large; font-weight: 600">
@@ -491,7 +513,7 @@
           </section>
           <section class="cultos-dias">
             <i class="fa-solid fa-sun" style="
-                  background-color: var(--cardVerde);
+                  background-color: var(--verde);
                   padding: 15px;
                   border-radius: 10px;
                   margin-right: 10px;
@@ -514,13 +536,12 @@
           <button class="bnt">Quartos</button>
         </div>
         <div class="quarto-conteudo desativado">
-          <section style="background-color: var(--cardVerde)">
+          <!-- <section style="background-color: var(--cardVerde)">
             <p id="suites" style="color: var(--verde)">
               <span><b>GALILÉIA</b></span>
             </p>
             <div style="display: flex">
               <div class="suites-textos">
-                <!-- div para estilizar o ícone somente -->
                 <div class="casa-suites comer" style="background-color: var(--amarelo)">
                   <i class="fa-solid fa-house"></i>
                 </div>
@@ -540,7 +561,6 @@
             </p>
             <div style="display: flex">
               <div class="suites-textos">
-                <!-- div para estilizar o ícone somente -->
                 <div class="casa-suites outros" style="background-color: var(--vermelho)">
                   <i class="fa-solid fa-house"></i>
                 </div>
@@ -559,7 +579,6 @@
             </p>
             <div style="display: flex">
               <div class="suites-textos">
-                <!-- div para estilizar o ícone somente -->
                 <div class="casa-suites comer" style="background-color: var(--amarelo)">
                   <i class="fa-solid fa-house"></i>
                 </div>
@@ -579,7 +598,6 @@
             </p>
             <div style="display: flex">
               <div class="suites-textos">
-                <!-- div para estilizar o ícone somente -->
                 <div class="casa-suites outros" style="background-color: var(--vermelho)">
                   <i class="fa-solid fa-house"></i>
                 </div>
@@ -598,7 +616,6 @@
             </p>
             <div style="display: flex">
               <div class="suites-textos">
-                <!-- div para estilizar o ícone somente -->
                 <div class="casa-suites comer" style="background-color: var(--amarelo)">
                   <i class="fa-solid fa-house"></i>
                 </div>
@@ -618,7 +635,6 @@
             </p>
             <div style="display: flex">
               <div class="suites-textos">
-                <!-- div para estilizar o ícone somente -->
                 <div class="casa-suites outros" style="background-color: var(--vermelho)">
                   <i class="fa-solid fa-house"></i>
                 </div>
@@ -637,7 +653,6 @@
             </p>
             <div style="display: flex">
               <div class="suites-textos">
-                <!-- div para estilizar o ícone somente -->
                 <div class="casa-suites comer" style="background-color: var(--amarelo)">
                   <i class="fa-solid fa-house"></i>
                 </div>
@@ -656,7 +671,6 @@
             </p>
             <div style="display: flex">
               <div class="suites-textos">
-                <!-- div para estilizar o ícone somente -->
                 <div class="casa-suites outros" style="background-color: var(--vermelho)">
                   <i class="fa-solid fa-house"></i>
                 </div>
@@ -668,18 +682,126 @@
                 </p>
               </div>
             </div>
-          </section>
+          </section> -->
 
-            <!-- <div class="dupla-coluna">
-              <i class="fa-solid fa-triangle-exclamation icon-aviso"></i>
-              <p style="font-size: 20px;">Seção ainda está em desenvolvimento</p>
-              <i class="fa-solid fa-triangle-exclamation icon-aviso"></i>
-            </div> -->
-
-
+          <div class="dupla-coluna" style="background-color: var(--vermelho);">
+            <i class="fa-solid fa-triangle-exclamation icon-aviso"></i>
+            <p style="font-size: 20px;">Seção ainda está em desenvolvimento</p>
+            <i class="fa-solid fa-triangle-exclamation icon-aviso"></i>
+          </div>
         </div>
       </div>
       <!-- Fim dos quartos -->
+
+      <!-- Avisos -->
+      <div class="aviso-card">
+        <div class="aviso-link">
+          <button class="bnt">Avisos</button>
+        </div>
+        <div class="aviso-conteudo desativado">
+          <div class="aviso-quadro">
+            <div class="aviso-titulo">
+              <p>Importante</p>
+            </div>
+            <div class="aviso-linha">
+              <div class="aviso-icon">
+                <i class="fa-solid fa-car" style="
+                  background-color: var(--verde);
+                  color: white;
+                  padding: 10px;
+                  border-radius: 50px;
+                  font-size: 25px;
+                  "></i>
+              </div>
+              <div class="aviso-texto">
+                <h3>Estacionamento</h3>
+                <ul style="font-size: 15px;
+                padding: 5px;">
+                  <li>Temos estacionamento para todos os veiculos</li>
+                  <li>Não nos responsabilizamos por itens pessoais deixados dentro dos carros</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="aviso-linha">
+              <div class="aviso-icon">
+                <i class="fa-solid fa-bed" style="
+                  background-color: var(--verde);
+                  color: white;
+                  padding: 10px;
+                  border-radius: 50px;
+                  font-size: 25px;
+                  "></i>
+              </div>
+              <div class="aviso-texto">
+                <h3>Quartos</h3>
+                <ul style="font-size: 15px;
+                padding: 5px;">
+                  <li>É um dever de todos manter o ambiente limpo e organizado,</li>
+                  <li>Materiais para limpeza quando necessário solicitar para a coordenação do evento</li>
+                  <li>Não nos responsabilizamos por itens pessoais </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="aviso-linha">
+              <div class="aviso-icon">
+                <i class="fa-solid fa-children" style="
+                  background-color: var(--verde);
+                  color: white;
+                  padding: 10px;
+                  border-radius: 50px;
+                  font-size: 25px;
+                  "></i>
+              </div>
+              <div class="aviso-texto">
+                <h3>Crianças </h3>
+                <ul style="font-size: 15px;
+                padding: 5px;">
+                  <li>As crianças devem sempre esta acompanhadas de adultos responsáveis </li>
+
+                  <li>
+                    Atenção com as crianças
+                    Quando estiverem próximo a piscinas e lagos
+                  </li>
+                  <li><b>A segurança deles é um dever de todos</b></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="aviso-linha">
+              <div class="aviso-icon">
+                <i class="fa-solid fa-gamepad" style="
+                  background-color: var(--verde);
+                  color: white;
+                  padding: 10px;
+                  border-radius: 50px;
+                  font-size: 25px;
+                  "></i>
+              </div>
+              <div class="aviso-texto">
+                <h3>Atividades livres</h3>
+                <ul style="font-size: 14px;
+                padding: 5px;">
+                  <li>
+                    Todas as atividades com o pedalinho precisão de monitoração e equipamentos segurança</li>
+
+                  <li>
+                    Bolas e acessórios para atividades na quadra estarão disponíveis para <b>TODOS</b>. Solicitar para a
+                    coordenação
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p>Qualquer duvida e necessidade entre em contato com a coordenação
+              <span style="display: flex;">
+                Pedro Henrique
+                Talita
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
