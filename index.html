@@ -533,10 +533,10 @@
       <!-- Quartos -->
       <div class="quarto-card">
         <div class="quarto-link">
-          <button class="bnt">Quartos</button>
+          <button class="bnt" onclick="terremoto(this)" id="quarto">Quartos <i class="fa-solid fa-lock"></i></button>
         </div>
         <div class="quarto-conteudo desativado">
-          <!-- <section style="background-color: var(--cardVerde)">
+          <section style="background-color: var(--cardVerde)">
             <p id="suites" style="color: var(--verde)">
               <span><b>GALILÉIA</b></span>
             </p>
@@ -682,13 +682,7 @@
                 </p>
               </div>
             </div>
-          </section> -->
-
-          <div class="dupla-coluna" style="background-color: var(--vermelho);">
-            <i class="fa-solid fa-triangle-exclamation icon-aviso"></i>
-            <p style="font-size: 20px;">Seção ainda está em desenvolvimento</p>
-            <i class="fa-solid fa-triangle-exclamation icon-aviso"></i>
-          </div>
+          </section> 
         </div>
       </div>
       <!-- Fim dos quartos -->
@@ -726,7 +720,7 @@
             <div class="aviso-linha">
               <div class="aviso-icon">
                 <i class="fa-solid fa-bed" style="
-                  background-color: var(--verde);
+                  background-color: var(--vermelho);
                   color: white;
                   padding: 10px;
                   border-radius: 50px;
@@ -747,7 +741,7 @@
             <div class="aviso-linha">
               <div class="aviso-icon">
                 <i class="fa-solid fa-children" style="
-                  background-color: var(--verde);
+                  background-color: var(--amarelo);
                   color: white;
                   padding: 10px;
                   border-radius: 50px;
@@ -793,12 +787,10 @@
                 </ul>
               </div>
             </div>
-            <p>Qualquer duvida e necessidade entre em contato com a coordenação
-              <span style="display: flex;">
-                Pedro Henrique
-                Talita
-              </span>
-            </p>
+            <div class="aviso-contato">
+              <p>Qualquer duvida e necessidade entre em contato com a coordenação <br> <b>Pedro Henrique ou Talita</b>
+              </p>
+            </div>
           </div>
         </div>
       </div>
