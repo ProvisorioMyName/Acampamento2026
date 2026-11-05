@@ -561,7 +561,6 @@ div.quarto-conteudo section {
   display: none !important;
 }
 
-
 .aviso-contato{
   background-color: #e79097;
   border-radius: 15px;
@@ -571,16 +570,3 @@ div.quarto-conteudo section {
   justify-content: center;
   text-align: center;
 }
-/* 
-@keyframes shake {
-  0% { transform: translateY(0); }
-  20% { transform: translateY(-5px); }
-  40% { transform: translateY(5px); }
-  60% { transform: translateY(-5px); }
-  80% { transform: translateY(5px); }
-  100% { transform: translateY(0); }
-}
-
-.tremor {
-  animation: shake 0.9s ease-in-out;
-} */

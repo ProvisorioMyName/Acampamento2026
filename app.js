@@ -55,11 +55,3 @@ cards.forEach((card) => {
     }
   });
 });
-
-function terremoto(botao) {
-  botao.classList.add("tremor");
-
-  setTimeout(() => {
-    botao.classList.remove("tremor");
-  }, 900);
-}
