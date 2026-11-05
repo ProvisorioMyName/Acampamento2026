@@ -571,8 +571,7 @@ div.quarto-conteudo section {
   justify-content: center;
   text-align: center;
 }
-
-/* Animação de tremer */
+/* 
 @keyframes shake {
   0% { transform: translateY(0); }
   20% { transform: translateY(-5px); }
@@ -584,4 +583,4 @@ div.quarto-conteudo section {
 
 .tremor {
   animation: shake 0.9s ease-in-out;
-}
+} */

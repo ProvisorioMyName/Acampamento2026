@@ -1,17 +1,15 @@
 //Pegamos de uma vez todos os elementos, para que não tenhamos que armazenar em várias variáveis
 const cards = document.querySelectorAll(
-  ".check-card, .culto-card, .program-card, .aviso-card",
+  ".check-card, .culto-card, .program-card, .aviso-card, .quarto-card",
 );
 
-// lembrar de colocar o "quarto-card" aqui em cima
 
 const acampCard = document.querySelector(".acamp-card");
 const quartoConteudo = document.querySelector(".quarto-conteudo");
 
 const conteudoCard = document.querySelectorAll(
-  ".check-conteudo, .program-conteudo, .culto-conteudo, .aviso-conteudo",
+  ".check-conteudo, .program-conteudo, .culto-conteudo, .aviso-conteudo, .quarto-conteudo",
 );
-// Lembrar de colocar o "quarto-conteudo" aqui em cima
 
 cards.forEach((card) => {
   //Pelo parametro "card" (o item da vez que está sendo rodado) verifiacmos no clique dele se ele tem a classe "aumentar"
@@ -34,9 +32,8 @@ cards.forEach((card) => {
 
       //Verifica o conteudo dentros dos cards
       const conteudoEscolhido = card.querySelector(
-        ".check-conteudo, .program-conteudo, .culto-conteudo, .aviso-conteudo",
+        ".check-conteudo, .program-conteudo, .culto-conteudo, .aviso-conteudo, .quarto-conteudo",
       );
-      // lembrar de colocar o "quarto-conteudo" aqui em cima
 
       //se o conteudo foi encontrado ele remove a classe que desativa
       if (conteudoEscolhido) {
